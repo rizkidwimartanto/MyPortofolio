@@ -1,0 +1,53 @@
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+#footer {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 2.5rem 0;
+}
+
+#footer p,
+#footer a {
+  color: #9ca3af;
+}
+
+#footer a:hover {
+  color: #ffffff;
+}
+
+#footer .border-t {
+  border-top: 1px solid #374151;
+}
+
+@keyframes bounceSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 3s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}

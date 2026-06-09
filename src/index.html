@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font Inter Tight -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+      <div class="container mx-auto p-4">
+        <!-- Header Navbar -->
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold text-xl">My Portfolio</h1>
+
+          <button class="md:hidden" id="toggle">☰</button>
+
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex gap-6">
+            <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-500">About</a></li>
+            <li>
+              <a href="#projects" class="hover:text-blue-500">Projects</a>
+            </li>
+            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul id="navbar-menu" class="hidden flex-col mt-4 gap-4 md:hidden">
+          <li class="py-2">
+            <a href="#home" class="hover:text-blue-500">Home</a>
+          </li>
+          <li class="py-2">
+            <a href="#about" class="hover:text-blue-500">About</a>
+          </li>
+          <li class="py-2">
+            <a href="#projects" class="hover:text-blue-500">Projects</a>
+          </li>
+          <li class="py-2">
+            <a href="#contact" class="hover:text-blue-500">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      class="relative h-screen flex items-center justify-center text-center px-4 shadow-md bg-gradient-to-r from-cyan-100 to-blue-100 overflow-hidden"
+    >
+      <!-- Blur Decoration -->
+      <div
+        class="absolute top-10 left-10 w-40 h-40 bg-cyan-300 opacity-30 rounded-full blur-3xl animate-pulse"
+      ></div>
+
+      <div
+        class="absolute bottom-10 right-10 w-52 h-52 bg-blue-300 opacity-30 rounded-full blur-3xl animate-pulse"
+      ></div>
+
+      <!-- Content -->
+      <div class="relative animate-fade-in mt-15">
+        <img
+          src="../img/myprofile.jpeg"
+          alt="myprofile"
+          class="w-52 h-52 md:w-60 md:h-60 rounded-full object-cover shadow-2xl border-4 border-white p-2 mt-2 mb-4 mx-auto animate-bounce-slow hover:scale-105 transition duration-300"
+        />
+
+        <h1 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
+          Halo, Saya Rizki Dwi Martanto
+        </h1>
+
+        <p class="text-md md:text-lg mb-6 text-gray-700">Web Developer</p>
+
+        <a
+          href="#projects"
+          class="inline-block bg-blue-500 px-6 py-3 text-white rounded-xl shadow-lg hover:bg-blue-700 hover:scale-105 transition duration-300"
+        >
+          Lihat Project
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-4">Tentang Saya</h2>
+        <p class="mx-auto px-6">
+          Saya adalah seorang Web Developer yang memiliki ketertarikan besar
+          dalam pengembangan website modern dan responsif. Saya memiliki
+          pengalaman menggunakan Laravel, Tailwind CSS, JavaScript, dan
+          PostgreSQL untuk membangun aplikasi web yang clean, user-friendly, dan
+          mudah digunakan. Selain fokus pada tampilan antarmuka yang menarik,
+          saya juga senang mempelajari bagaimana membuat sistem yang efisien,
+          terstruktur, dan memiliki performa yang baik. Saya selalu tertarik
+          untuk terus belajar teknologi baru serta mengembangkan kemampuan dalam
+          dunia web development dan IT.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-6">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="bg-blue-100 px-4 py-2 text-md rounded"
+            ><img src="../img/html-5.png" alt="html" class="w-5 h-5 mx-auto" />
+            HTML</span
+          >
+          <span class="bg-blue-100 px-4 py-2 text-md rounded"
+            ><img src="../img/css-3.png" alt="css" class="w-5 h-5 mx-auto" />
+            CSS</span
+          >
+          <span class="bg-blue-100 px-4 py-2 text-md rounded"
+            ><img
+              src="../img/bootstrap.png"
+              alt="bootstrap"
+              class="w-5 h-5 mx-auto"
+            />
+            Bootstrap</span
+          >
+          <span class="bg-blue-100 px-4 py-2 text-md rounded"
+            ><img
+              src="../img/Tailwind CSS.png"
+              alt="tailwindcss"
+              class="w-5 h-5 mx-auto"
+            />
+            TailwindCSS</span
+          >
+          <span class="bg-blue-100 px-4 py-2 text-md rounded"
+            ><img
+              src="../img/js.png"
+              alt="javascript"
+              class="w-5 h-5 mx-auto"
+            />
+            Javasript</span
+          >
+          <span class="bg-blue-100 px-4 py-2 text-md rounded"
+            ><img
+              src="../img/codeigniter.png"
+              alt="codeigniter"
+              class="w-5 h-5 mx-auto"
+            />
+            Codeigniter</span
+          >
+          <span class="bg-blue-100 px-4 py-2 text-md rounded"
+            ><img
+              src="../img/laravel.png"
+              alt="laravel"
+              class="w-5 h-5 mx-auto"
+            />
+            Laravel</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-6">Project</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <img src="../img/simaster.png" alt="simaster" class="w-100" />
+            <div class="mt-4">
+              <h3 class="font-bold mt-3">
+                SIMASTER (Sistem Monitoring Pelanggan Prioritas)
+              </h3>
+              <p class="text-sm mt-2">Sistem deteksi gangguan pelanggan PLN</p>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <img src="../img/zakat.png" alt="html" class="w-100" />
+            <div class="mt-4">
+              <h3 class="font-bold">Aplikasi Zakat</h3>
+              <p class="text-sm mt-2">Aplikasi perhitungan Zakat</p>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded shadow">
+            <img src="../img/antrian.png" alt="html" class="w-100" />
+            <div class="mt-4">
+              <h3 class="font-bold">Antrian Loket</h3>
+              <p class="text-sm mt-2">Pengambilan Antrian Loket</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-900 text-white py-10 z-50">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- About -->
+          <div>
+            <h3 class="text-xl font-bold mb-3">My Portfolio</h3>
+            <p class="text-gray-400">
+              Web Developer yang fokus pada pengembangan website modern,
+              responsif, dan user-friendly menggunakan Laravel, Tailwind CSS,
+              JavaScript, dan PostgreSQL.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold mb-3">Menu</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#home" class="text-gray-400 hover:text-white">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" class="text-gray-400 hover:text-white">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#projects" class="text-gray-400 hover:text-white">
+                  Projects
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-xl font-bold mb-3">Contact</h3>
+            <p class="text-gray-400 mb-2">📧 rizkidwimartanto@gmail.com</p>
+            <div class="flex gap-4 mt-4">
+              <a href="https://www.linkedin.com/in/rizki-dwi-martanto-80b9a9148/" target="_blank" class="hover:text-blue-400">LinkedIn</a>
+              <a href="https://www.instagram.com/rizkidwimartanto/" target="_blank" class="hover:text-pink-400">Instagram</a>
+              <a href="https://github.com/rizkidwimartanto" target="_blank" class="hover:text-gray-300">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+          <p class="text-gray-400">
+            © 2026 Rizki Dwi Martanto. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Kode Javascript -->
+    <script>
+      let toggle = document.getElementById("toggle");
+      $(document).ready(function () {
+        $("#toggle").click(function () {
+          $("#navbar-menu").toggleClass("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
